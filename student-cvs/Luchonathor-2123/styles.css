@@ -113,6 +113,10 @@ ol li div {
 }
 
 /* Estilos de los formularios */
+form {
+    accent-color: #FFD93D;
+}
+
 fieldset label {
     display: inline;
 }
