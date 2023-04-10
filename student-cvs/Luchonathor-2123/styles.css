@@ -1,8 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: lightgray;
-    color: #555;
+    background-color: #F6F1E9;
+    color: #4F200D;
     font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     margin: 0 auto;
     max-width: 50em;
@@ -18,7 +26,7 @@ body article {
 
 body article section {
     border-bottom: 1px dotted gray;
-    padding-bottom: 1.2em;
+    padding-bottom: 1.#FFD93D;
 }
 
 h1 {
@@ -47,29 +55,30 @@ p {
 
 a {
     font-size: 0.75em;
-    color: chocolate;
+    color: #FF8400;
 }
 
 a:hover {
-    color: darkgray;
+    color: #4F200D;
 }
 
 table {
     border-spacing: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.8em;
+    margin-bottom: 0.5em;
     width: 100%;
 }
 
 table thead {
-    background-color: chocolate;
+    background-color: #F6F1E9;
     border: 1px solid gray;
-    color: whitesmoke;
+    color: #4F200D;
     text-align: center;
 }
 
 table tbody tr td {
-    border: 0.01em solid lightgray;
+    border: 0.01em solid #F6F1E9;
 }
 
 table tbody tr td.principal {
@@ -81,7 +90,7 @@ ol li {
 }
 
 ol li div {
-    background: lightgray;
+    background: #FFD93D;
     border-radius: 0.8em ;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     color: brown;
@@ -96,4 +105,80 @@ ol li div {
 .principal {
     text-align: center;
     text-decoration: underline;
+}
+
+.contact {
+    margin: 1em 0;
+    padding: 2em;
+}
+
+/* Estilos de los formularios */
+fieldset label {
+    display: inline;
+}
+
+label {
+    color: #4F200D;
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-shadow: 1px 1px #F6F1E9;
+}
+
+label, select, textarea, input:not([type="radio"], [type="checkbox"]) {
+    width: 100%;
+}
+
+label, input {
+    vertical-align: middle;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: 333;
+}
+
+option {
+    color: 333;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea + div {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 1em 0;
+}
+
+/* Estilos de los botones */
+button {
+    background: #FFD93D;
+    border: 1px solid #4F200D;
+    border-radius: 0.5em;
+    color: #4F200D;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-shadow: -1px -1px 1px #FF8400;
+    text-transform: uppercase;
+}
+
+button:active {
+    background: #4F200D;
+    border: 1px solid #FFD93D;
+    border-radius: 0.5em;
+    color: #FFD93D;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-shadow: -1px -1px 0 #FF8400;
+    text-transform: uppercase;
 }
